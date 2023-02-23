@@ -38,6 +38,44 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
+  ${renderLicenseBadge(data.license)}
+
+  Explore the [project page](${data.repoLink})
+  View it live on [github-pages](${data.liveLink})
+
+  ## Table of Contents
+  - [Description] (#description)
+  - [installation] ($installation)
+  - [Usage] (#usage)
+  - [Demo] (#demo)
+  - [Built with] (#built-with)
+  - [Contributing] (#contributing)
+  - [Tests] (#tests)
+  - [Contact] (#contact)
+  ${renderLicenseLink(data.license)}
+
+  ## Description
+  ${data.description}
+
+  ##Installation
+  ${data.installation}
+
+  ## Usage
+  ${data.usage}
+
+  ## Contributing
+  ${data.contribution}
+
+  ## Tests
+
+  ${data.tests}
+
+  ${renderLicenseSection(data.license)}
+
+  ## Follow
+
+  Github: [https://github.com/${data.username}](https://github.com/${data.username})
+
 `;
 }
 
