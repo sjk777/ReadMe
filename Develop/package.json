@@ -1,14 +1,22 @@
 {
-  "name": "static-site",
+  "name": "readme",
   "version": "1.0.0",
-  "description": "",
+  "description": "a Reademe generator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "sky",
+  "license": "MIT",
   "dependencies": {
     "inquirer": "^6.3.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "sjk777"
+  },
+  "keywords": [
+    "readme"
+  ]
 }
